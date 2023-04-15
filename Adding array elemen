@@ -1,0 +1,29 @@
+package Day2;
+
+import java.util.*;  //import scanner class
+
+public class Practice {
+	static int a = 0;   // declare i as a static to access it in defferent methods
+	static int i;       // declare i as a static to access it in defferent methods
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int arr[] = new int[3];
+
+		for (int i = 0; i < arr.length; i++) {   // taking user values as a input
+
+			arr[i] = sc.nextInt();
+		}
+
+		for (i = 0; i < arr.length; i++) {       // adding array elements one by one
+
+			a = a + arr[0];
+
+		}
+    
+		System.out.println(a);
+
+	}
+
+}
