@@ -1,0 +1,108 @@
+import java.util.Scanner;
+
+public class Bank
+{
+
+	void findinterest()
+	{
+		System.out.println("10%");
+	}
+	
+}	
+class SBI extends Bank
+{
+	
+	void findinterest()
+	{
+		System.out.println("8%");
+	}
+	
+}
+	
+class ICICI extends Bank
+{
+	
+	void findinterest()
+	{
+		System.out.println("12%");
+	}
+	
+}
+
+class test1e
+{
+	
+	public static Bank createBankObject(String bname) 
+	{
+		
+		
+		   if(bname.equals("SBI"))
+		   {
+			    SBI s = new SBI();
+			    return s;
+		   }else if(bname.equals("ICICI"))
+		   {
+				  ICICI i = new ICICI();
+				  return i;
+			  
+		   }else
+			   return null;
+				   
+		
+		
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		
+		Bank b;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the bank name ");
+		String bname=sc.next();
+		
+		
+		 b =createBankObject(bname);
+		
+		 b.findinterest();
+		
+				
+		
+		
+	}
+
+	
+}
+
+
+// this is the example of runtime polymorphism
+here 4 classes are created...
+Bank class is super class - has one method 
+sbi and icici is subclass  - both has a seperate methods which are modified ....
+and test1 is a driver class...
+
+in this class there is 2 methods...
+main and one more method(createBankObject) to check input of user...
+
+main method contains a reference of super class..
+we take the input from the user , and call createBankObject method ...by passing user input
+
+it performs if else statements and returns the object to the method...
+return type of createBankObject method is bank....because it is super class and can store object of subclass.
+
+during runtime, depend on user inputs, compiler will select the subclass methods to perform the task.
+
+super class reference is used to store the objects of subclass...
+
+
+
+
+
+
+
+
+
+
+
+
