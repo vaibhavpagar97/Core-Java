@@ -1,0 +1,36 @@
+import java.util.Scanner;// Exception handling in java
+
+public class Exception1 {
+
+	public static void main(String[] args) {
+
+		int a;
+		int b;
+		Scanner s = new Scanner(System.in);
+		a = s.nextInt();
+		b = s.nextInt();
+
+		int[] n = { 10, 20, 30, 40 };
+
+		try {                          // this is the try block where error can be come
+
+			int c = a / b;             // here arithemetical error could come
+			System.out.println(c);
+
+			System.out.println(n[3]);  // here array index out of bound error could be come
+
+		} 
+		catch (ArrayIndexOutOfBoundsException e) {  // this catch block is provided to handle 
+			System.out.println("size of arry is 4");// Array index error
+		}
+		catch (ArithmeticException e) {            //this catch block is provided to handle 
+			 										//arithemetical error
+			
+		System.out.println("devide by error b value should not no zero");
+		}
+
+		System.out.println("rest of the code");
+
+	}
+
+}
