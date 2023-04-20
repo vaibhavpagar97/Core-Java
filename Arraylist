@@ -1,0 +1,37 @@
+package Day9;
+
+import java.io.*;
+import java.util.*;
+public class Arraylist {
+
+	public static void main(String[] args) {
+		//declareing array list
+		ArrayList<Integer> al = new ArrayList<Integer>() ;
+		
+		//adding array elements in array using for loop
+		for (int i = 1 ; i<=5;i++) {
+			al.add(i);
+		}
+		
+		//printing the array elements
+		System.out.println(al);
+		
+		//remove element at index 3
+		
+		al.remove(3);
+		
+		//again print array 
+		
+		System.out.println(al);
+		
+		//printing array elements one by one
+		for (int i = 0 ; i < al.size();i++) {
+			System.out.print(al.get(i)+ " ");
+		}
+		
+	}
+	
+}				
+
+//in this program you will se declaration of array list , addistion of elements in array list, removing the element from array list
+the diff between regular array and array list is that , array list does not have fixed size , you can add or remove elements at any time
