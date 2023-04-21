@@ -1,0 +1,15 @@
+package Filehandling;
+
+//Importing File Class
+import java.io.File;
+import java.io.IOException;
+
+class Filecre{
+	public static void main(String[] args) throws IOException   // handling exception is necessory
+	{
+
+		// File name specified
+		File obj = new File("C:\\Users\\Vaibhav Pagar\\eclipse-workspace\\LCM.mp4");
+		obj.createNewFile();
+	}
+}
