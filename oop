@@ -1,0 +1,15 @@
+class A {
+
+void method1 (){
+
+
+}
+}
+
+class B extends A {
+
+void method2 (){
+
+
+}
+}
