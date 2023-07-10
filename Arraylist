@@ -33,5 +33,5 @@ public class Arraylist {
 	
 }				
 
-//in this program you will se declaration of array list , addistion of elements in array list, removing the element from array list
+//in this program you will see declaration of array list , addistion of elements in array list, removing the element from array list
 the diff between regular array and array list is that , array list does not have fixed size , you can add or remove elements at any time
